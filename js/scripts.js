@@ -1,18 +1,28 @@
 
 var string = ('input#phrase');
-var openArray = string.split('');
+//var openArray = string.split('');
 var codedArray = [];
-var square = square root input phrase
-var col# = square
+var square = (Math.ceil(Math.sqrt(string.length)));
+//var col = Math.ceil(square);
 
 function crypto(string){
-  for ( i = 0; i<openArray.length; i+(col))
-}
+  alert(square)
+debugger;
+  for ( i = 0; i<string.length; i+(square)) {
+    string.slice(i,1).push(codedArray);
+    if (square > 0){
+      square --;
 
+    alert(square);
+  }
+  codedArray.join('');
+}
+}
 $(document).ready(function() {
   $('form').submit(function(event) {
     event.preventDefault();
-    var output = convertToRoman($("input#number").val());
+    var string = $("input#phrase").val().split('');
+    crypto(string);
     $("#output").text(output);
   });
 });
